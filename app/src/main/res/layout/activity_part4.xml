@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity.Activity_part4"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 71-73"
+        android:id="@+id/tvQs"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/accent_material_light" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="390dp"
+        android:id="@+id/listViewPart4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvQs" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_below="@+id/listViewPart4"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgPlayPart4"
+            android:src="@drawable/icon_play" />
+
+        <SeekBar
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarPart4"
+            android:indeterminate="false"
+            android:layout_weight="0.99" />
+
+        <Button
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="Kiểm tra"
+            android:id="@+id/btnStatus"
+            android:background="#d31b27"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time/time"
+        android:id="@+id/tvAudioTime"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="-15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtAnswer"
+        android:visibility="invisible" />
+
+</LinearLayout>

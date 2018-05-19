@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.huong.toeic_project">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Activity_part1"
+            android:label="Part 1: Photographs"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".activity.Activity_part2"
+            android:label="Part 2: Question Response"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".activity.Activity_part"
+            android:screenOrientation="portrait"
+            android:label="Luyện nghe Tiếng Anh - TOEIC" />
+        <activity
+            android:name=".activity.Activity_part3"
+            android:label="Part 3: Short Conversations"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".activity.Activity_part4"
+            android:label="Part 4: Short Talks"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity android:name=".activity.Activity_result"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.Activity_savedPoint"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.Activity_help"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
